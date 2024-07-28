@@ -6,14 +6,7 @@ geeks for geeks:       https://www.geeksforgeeks.org/java-util-hashmap-in-java-w
 
 // Java program to add elements
 // to the HashMap
-import java.io.*;
-import java.util.*;
 
-class AddElementsToHashMap {
-    public static void main(String args[])
-    {
-        // No need to mention the
-        // Generic type twice
         HashMap<Integer, String> hm1 = new HashMap<>();
 
         // Initialization of a HashMap
@@ -32,14 +25,9 @@ Mapping of HashMap hm2 are : {1=Geeks, 2=For, 3=Geeks}
 
 2. Changing Elements in HashMap in Java -----------------------------------------------------------------------------------
 
-  // Java program to change
-// elements of HashMap
+         // Java program to change
+        // elements of HashMap
 
-import java.io.*;
-import java.util.*;
-class ChangeElementsOfHashMap {
-    public static void main(String args[])
-    {
 
         // Initialization of a HashMap
         HashMap<Integer, String> hm
@@ -55,9 +43,7 @@ class ChangeElementsOfHashMap {
         hm.put(2, "For");
 
         System.out.println("Updated Map " + hm);
-    }
-}
-
+  
 Output
 Initial Map {1=Geeks, 2=Geeks, 3=Geeks}
 Updated Map {1=Geeks, 2=For, 3=Geeks}
@@ -102,9 +88,9 @@ Key: vishal Value: 10
 Key: sachin Value: 30
 
 
+Time ans space complexity of an hashmap ----------------------------------------------
 
-  time ans space complexity of an hashmap ----------------------------------------------
-  Methods
+Methods
 
 Time Complexity
 
@@ -143,7 +129,22 @@ It can be seen that the node is containing a reference to its own object. So itâ
 
 
 
-#Method----------------------------------------------------------------
+# Methods----------------------------------------------------------------
+
+important functions:
+
+containsKey(Object key)	Returns true if this map contains a mapping for the specified key.
+containsValue(Object value)	Returns true if this map maps one or more keys to the specified value.
+entrySet()	Returns a Set view of the mappings contained in this map.
+get(Object key)	Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+isEmpty()	Returns true if this map contains no key-value mappings.
+keySet()	Returns a Set view of the keys contained in this map.
+put(K key, V value)	Associates the specified value with the specified key in this map.
+putAll(Map<? extends K,? extends V> m)	Copies all of the mappings from the specified map to this map.
+remove(Object key)	Removes the mapping for the specified key from this map if present.
+size()	Returns the number of key-value mappings in this map.
+values()	Returns a Collection view of the values contained in this map.
+
 
 Description
 
@@ -152,12 +153,6 @@ clone()	Returns a shallow copy of this HashMap instance: the keys and values the
 compute(K key, BiFunction<? super K, ? super V,? extends V> remappingFunction)	Attempts to compute a mapping for the specified key and its current mapped value (or null if there is no current mapping).
 computeIfAbsent(K key, Function<? super K,? extends V> mappingFunction)	If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null. 
 computeIfPresent(K key, BiFunction<? super K, ? super V,? extends V> remappingFunction)	If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. 
-containsKey(Object key)	Returns true if this map contains a mapping for the specified key.
-containsValue(Object value)	Returns true if this map maps one or more keys to the specified value.
-entrySet()	Returns a Set view of the mappings contained in this map.
-get(Object key)	Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
-isEmpty()	Returns true if this map contains no key-value mappings.
-keySet()	Returns a Set view of the keys contained in this map.
 merge(K key, V value, BiFunction<? super V, ? super V,? extends V> remappingFunction)	If the specified key is not already associated with a value or is associated with null, associate it with the given non-null value.
 put(K key, V value)	Associates the specified value with the specified key in this map.
 putAll(Map<? extends K,? extends V> m)	Copies all of the mappings from the specified map to this map.
