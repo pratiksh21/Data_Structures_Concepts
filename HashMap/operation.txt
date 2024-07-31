@@ -11,8 +11,7 @@ geeks for geeks:       https://www.geeksforgeeks.org/java-util-hashmap-in-java-w
 
         // Initialization of a HashMap
         // using Generics
-        HashMap<Integer, String> hm2
-            = new HashMap<Integer, String>();
+        HashMap<Integer, String> hm2 = new HashMap<Integer, String>();
 
         // Add Elements using put method
         hm1.put(1, "Geeks");
